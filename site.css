@@ -248,11 +248,29 @@ h2 { font-size: clamp(36px, 4vw, 64px); }
 
 .get {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: clamp(28px, 5vw, 80px);
-  max-width: 1200px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 36px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 72px var(--pad) 88px;
+}
+
+.get__copy {
+  min-width: 0;
+  max-width: 36rem;
+}
+
+.get .lead {
+  max-width: 100%;
+  margin-bottom: 22px;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 960px) {
+  .get {
+    grid-template-columns: minmax(0, 36rem) minmax(16rem, 1fr);
+    gap: 64px;
+  }
 }
 
 .fine {
@@ -312,7 +330,7 @@ h2 { font-size: clamp(36px, 4vw, 64px); }
   .beat,
   .beat--flip,
   .get {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .beat--flip .beat__text { order: 0; }
