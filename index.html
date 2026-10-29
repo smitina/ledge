@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ledge — YouTube Music in the notch</title>
+  <meta name="description" content="Ledge is a free Mac player for YouTube Music. It hangs in the notch. Version 1.0.">
+  <meta name="theme-color" content="#050506">
+  <meta property="og:title" content="Ledge — YouTube Music in the notch">
+  <meta property="og:description" content="A free Mac player that hangs from the top of the screen. Version 1.0.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://smitina.github.io/ledge/media/poster.jpg">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="media/icon.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="media/icon.png" width="36" height="36" alt="">
+      <span>Ledge</span>
+    </a>
+    <div class="nav__side">
+      <span class="ver">1.0</span>
+      <a class="btn" href="download/Ledge-1.0.zip">Download</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Ledge">
+      <div class="hero__stage">
+        <video class="hero__video" autoplay muted loop playsinline poster="media/poster.jpg">
+          <source src="media/ledge-hero.webm" type="video/webm">
+          <source src="media/ledge-hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero__shade"></div>
+      </div>
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Free for Mac</p>
+        <h1>Your music lives<br>in the notch.</h1>
+        <p class="lead">Ledge plays YouTube Music from the top of the screen. A vinyl, the track, and the buttons. The rest of the desktop stays yours.</p>
+        <div class="actions">
+          <a class="btn btn--lg" href="download/Ledge-1.0.zip">Download for Mac</a>
+          <a class="btn btn--ghost btn--lg" href="#inside">What’s inside</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs" aria-label="Version">
+      <ul>
+        <li><span>Version</span> 1.0</li>
+        <li><span>Price</span> Free</li>
+        <li><span>System</span> macOS 13 or later</li>
+        <li><span>Mac</span> Apple silicon</li>
+      </ul>
+    </section>
+
+    <section class="story" id="inside">
+      <article class="beat">
+        <div class="beat__text">
+          <p class="kicker">01</p>
+          <h2>It hangs from the top edge.</h2>
+          <p>The player is flush with the screen, not a floating card. Rest the pointer on it and the controls drop down. Move away and it tucks back into a small disc and a pause button.</p>
+        </div>
+        <img src="media/player.jpg" alt="Ledge open in the notch, playing Afterglow by Nova Lane.">
+      </article>
+
+      <article class="beat beat--flip">
+        <div class="beat__text">
+          <p class="kicker">02</p>
+          <h2>Six bands, and your own presets.</h2>
+          <p>The equalizer lives next to the menu. Name a setting, save it, and come back to it. Flat is one click away.</p>
+        </div>
+        <img src="media/equalizer.jpg" alt="The six-band equalizer with a field for naming a preset.">
+      </article>
+
+      <article class="beat">
+        <div class="beat__text">
+          <p class="kicker">03</p>
+          <h2>Drop a file on it.</h2>
+          <p>Drag something onto the notch and it splits in two. The left side sends the file with AirDrop. The right side moves it to the Trash.</p>
+        </div>
+        <img src="media/drop.jpg" alt="A file hovering over Ledge, with AirDrop on the left and Trash on the right.">
+      </article>
+
+      <article class="beat beat--flip">
+        <div class="beat__text">
+          <p class="kicker">04</p>
+          <h2>The display you choose.</h2>
+          <p>Ledge stays on the monitor you pick. It can open when you log in. Camera area mode scrolls the track title through the small notch, for the space under the camera.</p>
+        </div>
+        <img src="media/menu.jpg" alt="The Ledge menu with a display picker and launch at login.">
+      </article>
+    </section>
+
+    <section class="get" id="download">
+      <div class="get__copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Version 1.0</p>
+        <h2>Take it. It’s free.</h2>
+        <p class="lead">Unzip Ledge and move it to Applications. YouTube Music opens in its own Chrome window, so Chrome needs to be installed.</p>
+        <a class="btn btn--lg" href="download/Ledge-1.0.zip">Download Ledge 1.0</a>
+        <p class="fine">Zip, 1.4 MB. Menus are in Ukrainian.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span>1</span>
+          <div>
+            <strong>Unzip and move it</strong>
+            <p>Put Ledge in Applications. It does not need an installer.</p>
+          </div>
+        </li>
+        <li>
+          <span>2</span>
+          <div>
+            <strong>Open it the first time</strong>
+            <p>macOS blocks apps that aren’t notarized. Control-click Ledge and choose Open, then Open again.</p>
+          </div>
+        </li>
+        <li>
+          <span>3</span>
+          <div>
+            <strong>Sign in once</strong>
+            <p>The first play opens YouTube Music in Chrome. After you sign in, the notch takes over.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div>
+      <strong>Ledge</strong>
+      <span>Version 1.0 · Free</span>
+    </div>
+    <a href="https://github.com/smitina/ledge">GitHub</a>
+  </footer>
+</body>
+</html>
